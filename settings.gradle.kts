@@ -2,6 +2,7 @@ pluginManagement {
     plugins {
         kotlin("jvm") version "1.7.10"
         kotlin("multiplatform") version "1.7.10"
+        kotlin("kapt") version "1.7.10"
     }
 }
 

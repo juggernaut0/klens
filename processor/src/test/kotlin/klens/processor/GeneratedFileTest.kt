@@ -1,7 +1,8 @@
+package klens.processor
+
 import com.google.devtools.ksp.processing.CodeGenerator
 import io.mockk.every
 import io.mockk.mockk
-import klens.processor.GeneratedFile
 import java.io.ByteArrayOutputStream
 import kotlin.test.Test
 import kotlin.test.assertEquals

@@ -1,5 +1,6 @@
 package klens.processor
 
+import com.google.auto.service.AutoService
 import com.google.devtools.ksp.processing.*
 import com.google.devtools.ksp.symbol.KSAnnotated
 import com.google.devtools.ksp.symbol.KSClassDeclaration
@@ -28,6 +29,7 @@ class KlensSymbolProcessor(
         return emptyList()
     }
 
+    @AutoService(SymbolProcessorProvider::class)
     class Provider : SymbolProcessorProvider {
         override fun create(environment: SymbolProcessorEnvironment): SymbolProcessor {
             return KlensSymbolProcessor(environment.codeGenerator, LensesGenerator(environment.logger))

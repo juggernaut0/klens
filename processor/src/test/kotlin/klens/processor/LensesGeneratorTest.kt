@@ -1,9 +1,10 @@
+package klens.processor
+
 import com.google.devtools.ksp.processing.KSPLogger
 import com.google.devtools.ksp.symbol.*
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify
-import klens.processor.LensesGenerator
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
